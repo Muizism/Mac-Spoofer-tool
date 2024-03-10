@@ -267,8 +267,11 @@ class MacChangerGUI:
     def populate_mac_address(self, event):
      manufacturer = self.manufacturer_combobox.get()
      mac_address = manufacturers.get(manufacturer, "")
-     self.mac_entry.delete(0, tk.END)
-     self.mac_entry.insert(0, mac_address)
+     if mac_address:
+        self.mac_entry.delete(0, tk.END)
+        self.mac_entry.insert(0, mac_address)
+     else:
+        messagebox.showwarning("Warning", "Invalid manufacturer selected.")
 
     def populate_adapters(self):
         adapters = get_connected_adapters_mac_address()

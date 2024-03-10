@@ -2,6 +2,8 @@
 
 Mac Spoofer is a Python tool for manipulating MAC addresses on Windows systems. It provides options for changing MAC addresses of network adapters and sniffing ARP packets for educational purposes.
 
+**Note:** Wireshark must be installed on your system as it provides the required libpcap library for packet sniffing functionality.
+
 ## Usage
 
 1. Clone the repository:
@@ -28,3 +30,4 @@ Mac Spoofer is a Python tool for manipulating MAC addresses on Windows systems. 
 ## Important Note
 
 This tool requires administrator privileges to modify network adapter settings. Please ensure that Visual Studio Code is running with elevated privileges when executing the tool.
+Wireshark 
